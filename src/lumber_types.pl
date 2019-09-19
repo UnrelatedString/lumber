@@ -7,6 +7,8 @@ semantically significant subtypes. That's not to say it succeeds.
           [lt_is/3]).
 :- use_module(library(clpfd)).
 
+% Once stuff is up and running, consider whether or not to add cuts.
+
 % General case: if the type of something is T, then it's a T.
 lt_is(T, X, V) :-
     X =.. [T, V].
