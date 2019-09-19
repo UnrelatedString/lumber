@@ -30,7 +30,7 @@ lt_is(seq, X, V) :-
     lt_is(infinite, X, V); % Not 100% sure how I'll do non-cyclic infinite lists
     lt_is(list, X, V).
 lt_is(list, X, V) :-
-    lt_is(string, X, S);
-    lt_is(stack, X, S).
+    lt_is(string, X, V);
+    lt_is(stack, X, V).
 
 % TODO: some sort of alternative forced casting predicate?
