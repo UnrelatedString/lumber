@@ -4,9 +4,7 @@ semantically significant subtypes. That's not to say it succeeds.
 */
 
 :- module(lumber_types,
-          []).
-
-lt_assert_types()
+          [lt_is/3]).
 
 lt_is(T, X, V) :-
     X =.. [T, V].
